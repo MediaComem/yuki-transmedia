@@ -18,6 +18,14 @@ $ npm install
 $ grunt
 ```
 
+## Configuration
+
+Les variables d'environnement suivantes peuvent être utilisées pour configurer l'application en mode production (lorsque la valeur de `NODE_ENV` est `production`):
+
+* `PORT` - Port sur lequel écoute le serveur. `3000` par défaut.
+* `DATABASE_URL` - Adresse de connexion à la base de données MongoDB. `mongodb://localhost/yuki-transmedia-production` par défaut.
+* `SECRET_KEY` - Clé de session.
+
 ## GIT Workflow
 
 Utilisation de git pour tous les membres de l'équipe.

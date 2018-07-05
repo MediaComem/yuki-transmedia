@@ -28,9 +28,9 @@ var config = {
     app: {
       name: 'yuki-transmedia'
     },
-    port: 3000,
-    db: 'mongodb://localhost/yuki-transmedia-production',
-    key: "mdslmlfd893879smlfsldmffnneknwklelm8934879478"
+    port: process.env.PORT || 3000,
+    db: process.env.DATABASE_URL || 'mongodb://localhost/yuki-transmedia-production',
+    key: process.env.SECRET_KEY || "mdslmlfd893879smlfsldmffnneknwklelm8934879478"
   }
 };
 
