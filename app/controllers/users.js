@@ -1,5 +1,6 @@
 var express = require('express'),
     async = require('async'),
+    config = require('../../config/config'),
     router = express.Router(),
     mongoose = require('mongoose'),
     session = require('express-session'),
@@ -10,7 +11,7 @@ User = mongoose.model('User');
 require('express-jsend');
 
 router.use(session({
-    secret: '2C44-4D44-WppQ38S',
+    secret: config.key,
     resave: true,
     saveUninitialized: true
 }));
